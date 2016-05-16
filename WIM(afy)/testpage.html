@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            .circle-container {
+                position: relative;
+                width: 24em;
+                height: 24em;
+                padding: 2.8em;
+                /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+                /*border: dashed 1px;*/
+                border-radius: 50%;
+                margin: 1.75em auto 0;
+                margin-top: 50%;
+            }
+            .circle-container a {
+                display: block;
+                position: absolute;
+                top: 50%; left: 50%;
+                width: 4em; height: 4em;
+                margin: -2em;
+                text-decoration: none;
+            }
+            .circle-container  { display: block; width: 50%; }
+            .deg0 { transform: rotate(-90deg) translate(12em) rotate(-90deg); } /* 12em = half the width of the wrapper */
+            .deg45 { transform: rotate(-210deg) translate(12em) rotate(210deg); }
+            .deg135 { transform: rotate(-330deg) translate(12em) rotate(330deg); }
+            
+            .homepagebuttondiv {
+                width: 150px;
+                height: 150px;
+                background-color: none;
+                border-radius: 50%;
+                
+            }
+            
+            #homepagetopbutton {
+                -ms-transform: rotate(180deg); /* IE 9 */
+                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                transform: rotate(180deg);
+            }
+            
+            
+            #homepagetopbuttonlable {
+                margin: -110px -75px;
+                -ms-transform: rotate(180deg); /* IE 9 */
+                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+                transform: rotate(180deg);
+            }
+            
+            .homepagebuttonlable {
+                margin: 5px -55px;
+                width: 200px;
+                font-family: Arial;
+                color: white;
+                text-align: center;
+                font-size: 30px
+            }
+        </style>
+    </head>
+    <body style="background-color: #43A047">
+        <div class='circle-container'>
+            
+            <a href='#' class='deg0'>
+                <img id="homepagetopbutton" class="homepagebuttondiv" style="margin: -75px -50px;" src="web_images/add-512%20(1).png"> 
+                <p id="homepagetopbuttonlable" class="homepagebuttonlable">New WIM</p>
+                    
+                
+            </a>
+            <a href='#' class='deg45'>
+                <img class="homepagebuttondiv" style="margin: 0px -30px;" src="web_images/profile.png"> 
+                <p class="homepagebuttonlable">My profile</p>
+                
+            </a>
+            <a href='#' class='deg135'>
+                <img class="homepagebuttondiv" style="margin: 0px -30px;" src="web_images/feed.png"> 
+                <p class="homepagebuttonlable">Current WIMs</p>
+                
+            </a>
+            
+        </div>
+    </body>
