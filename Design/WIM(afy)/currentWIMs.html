@@ -1,6 +1,11 @@
 <html>
 <head>
+    
+    
+    <script type="text/javascript" src="js/angular.min%20(1).js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="wimmain.css">
+    
 </head>
 <body>
     <div class="headerdiv">
@@ -11,12 +16,12 @@
         
     </div>
     
-    <div class="meatcontent">
+    <div class="meatcontent" ng-init="albums = [ { name: 'madrid', title: 'weekend in madrid', date: '2013-09-01', description: 'Fun weekend visiting the capitor of spain' }, { name: 'iceland1404', title: 'A holiday in Iceland', date: '2014-04-10', description: 'Oh boy it was really cold in Iceland!!!'}, {name: 'Thailand1210', title: 'Sun and fun in Thailand', date: '2012-10-15', description: 'We ate entirely too much thai food and had a great time at the beach'}, { name: 'australia1207', title: 'a wedding in Melbourne', date: '2012-07-20', description: 'We went to visit our friends for their wedding in Australia' }] ">
         <a href="WIMinfo.html">
-            <div class="currentwimsindividualdiv">
+            <div class="currentwimsindividualdiv" ng-repeat="album in albums | filter:{ title: searchFor} | orderBy: 'date'">
                 <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
                 <div class="currentwimswimnameanddestinationholder">
-                    <p class="currentwimswimname">Campfire</p>
+                    <p class="currentwimswimname">{{ album.date }}</p>
                     <p class="currentwimswimdestination">That one camp</p>
                 </div>
                 <div class="currentwimparticipantsdiv">
@@ -33,234 +38,7 @@
 
             </div>
         </a>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
         
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
-        <div class="currentwimsindividualdiv">
-            <img class="currentwimswimtypeimg" src="web_images/camping.jpg">
-            <div class="currentwimswimnameanddestinationholder">
-                <p class="currentwimswimname">Campfireadsfsdafsdaf</p>
-                <p class="currentwimswimdestination">That one camp</p>
-            </div>
-            <div class="currentwimparticipantsdiv">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <img class="currentwimparticipantsimg" src="user_profile_pics/74.jpg">
-                <div class="currentwimparticipantsimg">5</div>
-            </div>
-            <div class="currentwimswimtimesdiv">
-                <p class="currentwimscountdown">20 days</p>
-                <p class="currentwimsactualtime">Mon. April 14 3:40pm</p>
-            </div>
-            
-        
-        </div>
     
     
     </div>
