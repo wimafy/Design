@@ -656,7 +656,7 @@ a {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: lightgray;
     float: left;
     margin-top: 150px;
 }
@@ -823,11 +823,65 @@ a {
     margin-top: 0px;
 }
 
+.homepagesettingsbutton:click {
+    background-color: lightblue;
+} 
+
 .homepagesettingsbutton {
     width: 60px;
     height: 60px;
+    position: absolute;
     top: 0px;
     right: 0px;
     margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.homepagenotificationsbutton:click {
+    background-color: lightblue;
+}
+
+.homepagenotificationsbutton {
+    height: 60px;
+    top: 0px;
+    right: 80px;
+    margin: 50px;
     position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.homepagenotificationsimage {
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.homepagenotificationsname {
+    float: right;
+    line-height: 60px;
+    font-family: Arial;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 0px;
+    color: white;
+}
+
+.homepagenotificationsnumber {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -15px;
+    font-family: Arial;
+    
 }
