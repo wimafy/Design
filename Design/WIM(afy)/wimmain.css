@@ -2,11 +2,12 @@ body {
     margin: 0;
     width: 100%;
     max-width: 1100px;
-    background-color: #2196F3;
+    background-color: #ef5350;
 
 }
 
 a {
+    color: #3f3f3f;
     text-decoration: none;
 }
 
@@ -18,6 +19,14 @@ a {
     background-color: #2196F3;
     position: relative;
     z-index: 2;
+}
+
+.homepagewimlogo {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50px;
+    left: 40px;
 }
 
 .headerbackarrow {
@@ -280,9 +289,10 @@ a {
     text-decoration: none;
 }
 .circle-container  { display: block; width: 50%; }
-.deg0 { transform: rotate(-90deg) translate(12em) rotate(-90deg); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(-210deg) translate(12em) rotate(210deg); }
-.deg135 { transform: rotate(-330deg) translate(12em) rotate(330deg); }
+.deg0 { transform: rotate(0deg) translate(12em) rotate(180deg); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(-90deg) translate(12em) rotate(90deg); }
+.deg135 { transform: rotate(-180deg) translate(12em) rotate(180deg); }
+.deg245 { transform: rotate(-270deg) translate(12em) rotate(270deg); }
 
 .homepagebuttondiv {
     width: 150px;
@@ -738,11 +748,10 @@ a {
 }
 
 .profilebottomdiv {
-    width: 96%;
-    height: calc(100% - 823px);
-    background-color: white;
+    width: calc(100%);
+    height: calc(100% - 822px);
     position: absolute;
-    margin: 0px 2%;
+    margin: 0px;
 }
 
 
@@ -762,7 +771,7 @@ a {
     position: absolute;
     bottom: 0px;
     margin: 2px;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .profilebottominfodiv {
@@ -778,9 +787,9 @@ a {
     background-color: white;
     float: left;
     width: calc(50% - 4px);
-    border-radius: 2px;
-    height: 100%;
-    overflow-y: auto;
+    margin-top: 4px;
+    border-radius: 0px 10px 10px 0px;
+   
 }
 
 .profileinfoindividualdiv {
@@ -821,8 +830,6 @@ a {
     width: 50%;
     background-color: lightgray;
     overflow-x: hidden;
-    height: 100%;
-    overflow-y: auto;
 }
 
 .profileinterestsdiv {
@@ -831,7 +838,7 @@ a {
     float: left;
     margin: 4px 10px 10px 10px;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .profileinterestsimg {
@@ -856,65 +863,38 @@ a {
 
 /*homepage */
 
-.homepagesettingsbutton:click {
-    background-color: lightblue;
-} 
 
 .homepagesettingsbutton {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.homepagesettingsdownarrow {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 0px;
     margin: 50px;
     padding: 10px;
-    border-radius: 5px;
 }
 
-.homepagenotificationsbutton:click {
-    background-color: lightblue;
-}
-
-.homepagenotificationsbutton {
-    height: 60px;
-    top: 0px;
-    right: 80px;
-    margin: 50px;
-    position: absolute;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.homepagenotificationsimage {
-    float: right;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.homepagenotificationsname {
-    float: right;
-    line-height: 60px;
-    font-family: Arial;
-    font-size: 30px;
-    margin-left: 10px;
-    margin-top: 0px;
-    color: white;
-}
-
-.homepagenotificationsnumber {
+.homepagenotifications {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: red;
+    background-color: white;
+    margin: -160px 60px;
+    position: relative;
     text-align: center;
     line-height: 40px;
-    font-size: 30px;
-    color: white;
-    z-index: 2;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: -15px;
-    font-family: Arial;
-    
+    font-size: 25px;
+    color: #2196F3;
+    font-family: Arial Black;
 }
