@@ -5,6 +5,9 @@
     <script type="text/javascript" src="js/angular.min%20(1).js"></script>
     <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
 </head>
 <body>
     <div value="init div"  ng-init="profileInfo = 
@@ -13,11 +16,13 @@
     <img class="homepagewimlogo" src="web_images/dr-dre-beats-logo.png">
     
     <a href="notifications.html">
-        <img class="homepagesettingsbutton" src="user_profile_pics/{{profileInfo.profilePic}}">
-        <img class="homepagesettingsdownarrow" src="web_images/material-design-icons-2.2.0/hardware/2x_web/ic_keyboard_arrow_down_white_48dp.png">
+        <div class="homepagesettingsbuttondiv">
+            <img class="homepagesettingsbutton" src="user_profile_pics/{{profileInfo.profilePic}}">
+            <img class="homepagesettingsdownarrow" src="web_images/material-design-icons-2.2.0/hardware/2x_web/ic_keyboard_arrow_down_white_48dp.png">
+        </div>
     </a>
  
-            
+            <i class="material-icons">&#xE87C;</i>
     <div class='circle-container'>
 
         <a href='newWIM.html' class='deg0'>
