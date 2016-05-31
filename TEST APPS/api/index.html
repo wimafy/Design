@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="bower_components/google-map/google-map.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+    <link rel="import" href="bower_components/paper-item/paper-item.html">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+<!--
+<style>
+google-map{
+	width: 100%;
+	height: 300px;
+}
+</style>
+-->
+</head>
+<body>
+
+  
+<div class="text-center">
+  <paper-card elevation="4">
+  <div class="card-content">
+	   <google-map latitude="39.7392" longitude="-104.9903">
+    </google-map>
+    <div class="col-md-12">
+    <div class="col-md-6">
+    <paper-input label="Location">
+    <paper-textarea label="autoresizing textarea input"></paper-textarea>
+    </paper-input> 
+    </div>   
+    </div>
+<paper-dropdown-menu label="Hour">
+  <paper-listbox class="dropdown-content" selected="1">
+	<paper-item>1</paper-item>
+	<paper-item>2</paper-item>
+	<paper-item>3</paper-item>
+	<paper-item>4</paper-item>
+	<paper-item>5</paper-item>
+	<paper-item>6</paper-item>
+	<paper-item>7</paper-item>
+	<paper-item>8</paper-item>
+	<paper-item>9</paper-item>
+	<paper-item>10</paper-item>
+	<paper-item>11</paper-item>
+	<paper-item>12</paper-item>
+  </paper-listbox>
+</paper-dropdown-menu>
+<paper-dropdown-menu label="Minute" horizontal-align="right">
+  <paper-listbox class="dropdown-content" selected="1">
+	<paper-item>00</paper-item>
+	<paper-item>15</paper-item>
+	<paper-item>30</paper-item>
+	<paper-item>45</paper-item>
+  </paper-listbox>
+</paper-dropdown-menu>
+<div class="text-center">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+
+	<paper-button raised class="custom bttncolor">SET MEETING</paper-button>
+</div>
+
+
+
+ </paper-card>  
+  
+  
+   
+   </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
+</html>
